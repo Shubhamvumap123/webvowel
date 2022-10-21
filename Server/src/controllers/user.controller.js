@@ -58,7 +58,7 @@ const verify = async (req, res) => {
       }, { verified: true });
       await Mailtoken.findByIdAndRemove(token._id);
   
-      res.redirect('/login');
+      res.redirect('https://webvowel.vercel.app/login');
 
     } catch (error) {
         console.log(error)
