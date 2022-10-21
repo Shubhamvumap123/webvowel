@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(cors())
 
 app.post("/register", register)
-app.post("https://webvowel.vercel.app/login", login)
+app.post("/login", login)
 app.get("/verify/:id/:token", verify)
 // app.use("/task", taskController)
 

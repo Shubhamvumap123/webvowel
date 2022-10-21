@@ -31,7 +31,7 @@ const register = async (req, res) => {
 
         const message = `${process.env.BASE_URL}verify/${user._id}/${emailToken.token}`;
         await sendEmail(user.email, "Verify Email", message);
-        console.log(user.email, "Verify Email", message)
+        // console.log(user.email, "Verify Email", message)
         return  res.send({ user, token })
 
     } catch (error) {
@@ -56,7 +56,7 @@ const verify = async (req, res) => {
       }, { verified: true });
       await Mailtoken.findByIdAndRemove(token._id);
   
-      res.redirect('https://webvowel.vercel.app/login');
+      res.redirect('/login');
 
     } catch (error) {
         console.log(error)
