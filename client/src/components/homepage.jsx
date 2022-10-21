@@ -9,7 +9,7 @@ export const Homepage = () => {
     const fetchData = async () => {
     try {
     
-    let data = await fetch(`http://localhost:5000/user`,{
+    let data = await fetch(`https://webvowel.herokuapp.com/user`,{
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",

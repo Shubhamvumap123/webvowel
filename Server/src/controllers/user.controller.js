@@ -58,7 +58,7 @@ const verify = async (req, res) => {
       }, { verified: true });
       await Mailtoken.findByIdAndRemove(token._id);
   
-      res.redirect('http://localhost:3000/login');
+      res.redirect('/login');
 
     } catch (error) {
         console.log(error)
