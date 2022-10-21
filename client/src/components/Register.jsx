@@ -14,7 +14,7 @@ export const Register = () => {
 
   const registerData = async (e) => {
     try {
-      let res = await fetch("http://localhost:5000/register", {
+      let res = await fetch("https://webvowel.herokuapp.com/register", {
         method: "POST",
         body: JSON.stringify({
           name: name,

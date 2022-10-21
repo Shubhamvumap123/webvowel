@@ -8,7 +8,7 @@ const loginData = async (e,email,password) => {
 
   try {
     // console.log(email,password)
-    let res = await fetch(`http://localhost:5000/login`, {
+    let res = await fetch(`https://webvowel.herokuapp.com/login`, {
      
       // Adding method type
       method: "POST",
