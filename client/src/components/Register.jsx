@@ -14,7 +14,7 @@ export const Register = () => {
 
   const registerData = async (e) => {
     try {
-      let res = await fetch("https://webvowel.herokuapp.com/register", {
+      let res = await fetch("https://backweb.onrender.com/register", {
         method: "POST",
         body: JSON.stringify({
           name: name,
