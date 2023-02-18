@@ -10,7 +10,7 @@ require('dotenv').config()
 const generateToken = (user) => {
     return jwt.sign({ user }, process.env.SECRET_KEY)
 }
-console.log("SECRET_KEY",process.env.SECRET_KEY);
+
 const register = async (req, res) => {
 
     try {
@@ -65,7 +65,6 @@ const verify = async (req, res) => {
 
   };
 
-
 const login = async (req, res) => {
     try {
       console.log(req.body);
@@ -92,7 +91,6 @@ const login = async (req, res) => {
         return res.status(404).send({ message: error.message })
     }
 }
-
 
 const getUser = async (req, res) => {
   try {

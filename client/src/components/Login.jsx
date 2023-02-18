@@ -73,8 +73,8 @@ export const Login = () => {
           <Button sx={{ mt: '30px' }} variant="contained" onClick={(e)=>loginData(e,email,password)}>Log In</Button>
         </form>
         <p>{message}</p>
-
       </Container>
+      
     </div>
   )
 }
