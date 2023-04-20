@@ -7,8 +7,8 @@ const nodemailer = require('nodemailer')
         port: 587,
         secure: true,
         auth:{
-            user: process.env.USER,
-            pass:process.env.PASS,
+            user:"shubhamvumap123@gmail.com",
+            pass:'ljakyasdpldxxmcb',
         },
     });
     await transporter.sendMail({
